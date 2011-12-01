@@ -3,7 +3,7 @@
 	package="kr.co.myChat" android:versionCode="1"
 	android:versionName="1.0">
 	<application android:icon="@drawable/icon" android:label="@string/app_name">
-		<activity android:name="kr.co.myChat.C2DMMessengerActivity"
+		<activity android:name="kr.co.myChat.StartActivity"
 			android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,9 @@
 				<category android:name="kr.co.myChat" />
 			</intent-filter>
 		</receiver>
+		<activity android:name="RegisterActivity"></activity>
+		<activity android:name="SettingActivity"></activity>
+		<activity android:name="StartActivity"></activity>
 	</application>
 	<uses-sdk android:minSdkVersion="10" />
 	<permission android:name="kr.co.myChat.permission.C2D_MESSAGE"

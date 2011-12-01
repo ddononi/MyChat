@@ -1,6 +1,8 @@
 package kr.co.myChat;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -18,6 +20,30 @@ public class BaseActivity extends Activity {
 	public static final String SHARED = "mychat";
 	private boolean isTwoClickBack = false;		// 두번 클릭여부
 	
+	
+	
+	/**
+	 * 로딩중에 화면을 회전하면 에러가 발생하기 때문에
+	 * 완료가 될때까지 화면을 잠근다.
+	 */
+	public void mLockScreenRotation() {
+		// Stop the screen orientation changing during an event
+		switch (this.getResources().getConfiguration().orientation) {
+		case Configuration.ORIENTATION_PORTRAIT:
+			this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+			break;
+		case Configuration.ORIENTATION_LANDSCAPE:
+			this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+			break;
+		}
+	}
+
+	/**
+	 * 화면 잠금 해제
+	 */
+	public void unLockScreenRotation() {
+		this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+	}	
 	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {

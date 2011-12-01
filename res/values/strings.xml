@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, C2DMMessengerActivity!</string>
-    <string name="app_name">C2DM Messenger</string>
+    <string name="app_name">채팅어플</string>
 </resources>
