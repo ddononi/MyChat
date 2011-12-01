@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+	<TextView
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:text="아이디를 입력하세요" 
+	   android:textSize="20dp"
+	   android:gravity="center_horizontal"
+	     />    
+	<EditText
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:id="@+id/id"
+	   android:hint="여기에 이름을 입력하세요"   
+	     />
+	
+	<Button
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:id="@+id/submit"
+	   android:hint="전송"   
+	     />	
+	</LinearLayout>
