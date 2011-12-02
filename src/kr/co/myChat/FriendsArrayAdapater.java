@@ -27,9 +27,9 @@ import android.widget.Toast;
 public class FriendsArrayAdapater extends BaseAdapter {
 	private ArrayList<?> list;
 	private String id;	// 내 아이디값
-	public FriendsArrayAdapater(ArrayList<?> list, String id){
+	public FriendsArrayAdapater(ArrayList<?> list){
 		this.list = list;
-		this.id = id;
+
 	}
 
 	

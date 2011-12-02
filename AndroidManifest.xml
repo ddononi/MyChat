@@ -23,7 +23,7 @@
 		</receiver>
 		<activity android:name="RegisterActivity"></activity>
 		<activity android:name="SettingActivity"></activity>
-		<activity android:name="StartActivity"></activity>
+		<activity android:name="FriendsActivity"></activity>
 	</application>
 	<uses-sdk android:minSdkVersion="10" />
 	<permission android:name="kr.co.myChat.permission.C2D_MESSAGE"

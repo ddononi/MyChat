@@ -118,7 +118,7 @@ public class RegisterActivity extends BaseActivity {
 				// HTTP POST 메서드를 이용하여 데이터 업로드 처리
 				vars.add(new BasicNameValuePair("id", this.id)  ); // 경도
 
-				String url = SERVER + URLEncodedUtils.format(vars, null);
+				String url = REGISTER_URL + URLEncodedUtils.format(vars, null);
 				HttpPost request = new HttpPost(url);
 				try {
 

@@ -13,14 +13,15 @@ import android.widget.Toast;
  *	기본 설정 베이스 클래스
  */
 public class BaseActivity extends Activity {
-	public static final String SERVER = "";		// 서버url
+	public static final String REGISTER_URL = "";		// 등록 url
+	public static final String FRIEND_URL = "";		// 친구 리스트를 가져올 url
 	public static final String DEBUG_TAG = "mychat";	// 디버그 태그
 	public static final String APP_NAME = "";	// 앱 이름
 	public final static int DB_VER = 1;			// 디비 버젼
 	public static final String SHARED = "mychat";
+	
+	public static final int TIMEOUT = 6000;	// 커낵션 타임아웃 시간
 	private boolean isTwoClickBack = false;		// 두번 클릭여부
-	
-	
 	
 	/**
 	 * 로딩중에 화면을 회전하면 에러가 발생하기 때문에

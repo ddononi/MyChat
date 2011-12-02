@@ -28,7 +28,10 @@ public class StartActivity extends BaseActivity {
 			startActivity(intent);
 			finish();
 		}else{
-			
+			// 친구 리스트로 이동한다.
+			Intent intent = new Intent(StartActivity.this, FriendsActivity.class);
+			startActivity(intent);
+			finish();	
 		}
 		
 		
